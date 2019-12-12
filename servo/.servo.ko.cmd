@@ -1,0 +1,1 @@
+cmd_/home/pi/Desktop/Device-Practice/servo/servo.ko := ld -r  -EL -T ./scripts/module-common.lds -T ./arch/arm/kernel/module.lds  --build-id  -o /home/pi/Desktop/Device-Practice/servo/servo.ko /home/pi/Desktop/Device-Practice/servo/servo.o /home/pi/Desktop/Device-Practice/servo/servo.mod.o ;  true

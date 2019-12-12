@@ -1,4 +1,4 @@
-KERNEL_DIR = /lib/modules/4.19.66-v7+/build
+KERNEL_DIR = /lib/modules/4.19.57-v7+/build
 
 obj-m := motor_dev.o
 

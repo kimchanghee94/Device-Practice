@@ -29,7 +29,7 @@ int led_open(struct inode *inode, struct file *filp){
 	gpsel1 = (volatile unsigned int *)(gpio_base + GPFSEL1);
 	gpset0 = (volatile unsigned int *)(gpio_base +GPSET0);
 	gpclr0 = (volatile unsigned int *)(gpio_base + GPCLR0);
-	*gpsel1 |= (1<<12);
+	*gpsel1 |= (1<<9);
 	return 0;
 }
 
@@ -44,11 +44,11 @@ ssize_t led_write(struct file *filp, const char *buf, size_t size, loff_t *f_pos
 	copy_from_user(&led_onoff, buf, 4);
 	if(led_onoff==1){
 		printk(KERN_ALERT "LED On!!\n");
-		*gpset0 |= (1<<14);
+		*gpset0 |= (1<<13);
 	}
 	else{
 		printk(KERN_ALERT "LED Off!!\n");
-		*gpclr0 |= (1<<14);
+		*gpclr0 |= (1<<13);
 	}
 	return size;
 }

@@ -1,17 +1,18 @@
 sudo rmmod buzzer_dev
-sudo rmmod servo_dev
+sudo rmmod servo
 sudo rmmod led_dev
+sudo rmmod wls
 
 cd Buzzer
 sudo make clean
 make
-sudo insmod Buzzer_dev.ko
+sudo insmod buzzer_dev.ko
 cd ..
 
-cd Servo
+cd servo
 sudo make clean
 make
-sudo insmod servo_dev.ko
+sudo insmod servo.ko
 cd ..
 
 cd LED
@@ -22,9 +23,9 @@ cd ..
 
 cd WaterDepth
 sudo make clean
-make
+sudo make
 sudo insmod wls.ko
-cd..
+cd ..
 
 rm Bottle_app
 gcc -o Bottle_app Bottle_app.c -lpthread

@@ -6,7 +6,9 @@
 #include <linux/slab.h> 
 
 #include <asm/mach/map.h> 
-#include <asm/uaccess.h> 
+#include <asm/uaccess.h>
+
+#include <linux/spi/spidev.h>
 
 #define WLS_MAJOR_NUMBER	506
 #define WLS_DEV_NAME		"wls"

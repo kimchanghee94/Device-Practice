@@ -1,0 +1,1 @@
+cmd_/home/pi/Desktop/Device-Practice/Motor/motor_dev.ko := ld -r  -EL -T ./scripts/module-common.lds -T ./arch/arm/kernel/module.lds  --build-id  -o /home/pi/Desktop/Device-Practice/Motor/motor_dev.ko /home/pi/Desktop/Device-Practice/Motor/motor_dev.o /home/pi/Desktop/Device-Practice/Motor/motor_dev.mod.o ;  true

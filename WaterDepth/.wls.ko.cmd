@@ -1,0 +1,1 @@
+cmd_/home/pi/Desktop/Device-Practice/WaterDepth/wls.ko := ld -r  -EL -T ./scripts/module-common.lds -T ./arch/arm/kernel/module.lds  --build-id  -o /home/pi/Desktop/Device-Practice/WaterDepth/wls.ko /home/pi/Desktop/Device-Practice/WaterDepth/wls.o /home/pi/Desktop/Device-Practice/WaterDepth/wls.mod.o ;  true

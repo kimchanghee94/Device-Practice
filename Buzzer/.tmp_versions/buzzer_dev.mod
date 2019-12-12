@@ -1,3 +1,3 @@
-/home/pi/Desktop/Bottle/Buzzer/buzzer_dev.ko
-/home/pi/Desktop/Bottle/Buzzer/buzzer_dev.o
+/home/pi/Desktop/Device-Practice/Buzzer/buzzer_dev.ko
+/home/pi/Desktop/Device-Practice/Buzzer/buzzer_dev.o
 
